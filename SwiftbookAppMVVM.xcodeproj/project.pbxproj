@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		3523DE562A6E403D00A6F722 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE552A6E403D00A6F722 /* AppDelegate.swift */; };
 		3523DE582A6E403D00A6F722 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE572A6E403D00A6F722 /* SceneDelegate.swift */; };
-		3523DE5A2A6E403D00A6F722 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE592A6E403D00A6F722 /* ViewController.swift */; };
 		3523DE5D2A6E403D00A6F722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3523DE5B2A6E403D00A6F722 /* Main.storyboard */; };
 		3523DE5F2A6E403F00A6F722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3523DE5E2A6E403F00A6F722 /* Assets.xcassets */; };
 		3523DE622A6E403F00A6F722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3523DE602A6E403F00A6F722 /* LaunchScreen.storyboard */; };
+		3523DE6D2A6E419000A6F722 /* CourseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE6C2A6E419000A6F722 /* CourseListViewModel.swift */; };
+		3523DE722A6E41BD00A6F722 /* CourseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE712A6E41BD00A6F722 /* CourseCellViewModel.swift */; };
+		3523DE742A6E44BE00A6F722 /* CourseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE732A6E44BE00A6F722 /* CourseListViewController.swift */; };
+		3523DE762A6E453B00A6F722 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE752A6E453B00A6F722 /* CourseCell.swift */; };
+		3523DE792A6E483400A6F722 /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE782A6E483400A6F722 /* CourseDetailsViewController.swift */; };
+		3523DE7C2A6E485F00A6F722 /* CourseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE7B2A6E485F00A6F722 /* CourseDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3523DE522A6E403D00A6F722 /* SwiftbookAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftbookAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3523DE552A6E403D00A6F722 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3523DE572A6E403D00A6F722 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3523DE592A6E403D00A6F722 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3523DE5C2A6E403D00A6F722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3523DE5E2A6E403F00A6F722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3523DE612A6E403F00A6F722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3523DE632A6E403F00A6F722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3523DE6C2A6E419000A6F722 /* CourseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewModel.swift; sourceTree = "<group>"; };
+		3523DE712A6E41BD00A6F722 /* CourseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCellViewModel.swift; sourceTree = "<group>"; };
+		3523DE732A6E44BE00A6F722 /* CourseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewController.swift; sourceTree = "<group>"; };
+		3523DE752A6E453B00A6F722 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		3523DE782A6E483400A6F722 /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
+		3523DE7B2A6E485F00A6F722 /* CourseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		3523DE542A6E403D00A6F722 /* SwiftbookAppMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				3523DE7A2A6E483E00A6F722 /* CourseDetails */,
+				3523DE6B2A6E417C00A6F722 /* CourseList */,
 				3523DE552A6E403D00A6F722 /* AppDelegate.swift */,
 				3523DE572A6E403D00A6F722 /* SceneDelegate.swift */,
-				3523DE592A6E403D00A6F722 /* ViewController.swift */,
-				3523DE5B2A6E403D00A6F722 /* Main.storyboard */,
+				3523DE772A6E455300A6F722 /* Storyboard */,
 				3523DE5E2A6E403F00A6F722 /* Assets.xcassets */,
-				3523DE602A6E403F00A6F722 /* LaunchScreen.storyboard */,
 				3523DE632A6E403F00A6F722 /* Info.plist */,
 			);
 			path = SwiftbookAppMVVM;
+			sourceTree = "<group>";
+		};
+		3523DE6B2A6E417C00A6F722 /* CourseList */ = {
+			isa = PBXGroup;
+			children = (
+				3523DE732A6E44BE00A6F722 /* CourseListViewController.swift */,
+				3523DE6C2A6E419000A6F722 /* CourseListViewModel.swift */,
+				3523DE702A6E41A600A6F722 /* CourseCell */,
+			);
+			path = CourseList;
+			sourceTree = "<group>";
+		};
+		3523DE702A6E41A600A6F722 /* CourseCell */ = {
+			isa = PBXGroup;
+			children = (
+				3523DE752A6E453B00A6F722 /* CourseCell.swift */,
+				3523DE712A6E41BD00A6F722 /* CourseCellViewModel.swift */,
+			);
+			path = CourseCell;
+			sourceTree = "<group>";
+		};
+		3523DE772A6E455300A6F722 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3523DE5B2A6E403D00A6F722 /* Main.storyboard */,
+				3523DE602A6E403F00A6F722 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3523DE7A2A6E483E00A6F722 /* CourseDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3523DE782A6E483400A6F722 /* CourseDetailsViewController.swift */,
+				3523DE7B2A6E485F00A6F722 /* CourseDetailsViewModel.swift */,
+			);
+			path = CourseDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3523DE5A2A6E403D00A6F722 /* ViewController.swift in Sources */,
+				3523DE6D2A6E419000A6F722 /* CourseListViewModel.swift in Sources */,
 				3523DE562A6E403D00A6F722 /* AppDelegate.swift in Sources */,
+				3523DE7C2A6E485F00A6F722 /* CourseDetailsViewModel.swift in Sources */,
+				3523DE762A6E453B00A6F722 /* CourseCell.swift in Sources */,
+				3523DE742A6E44BE00A6F722 /* CourseListViewController.swift in Sources */,
+				3523DE792A6E483400A6F722 /* CourseDetailsViewController.swift in Sources */,
 				3523DE582A6E403D00A6F722 /* SceneDelegate.swift in Sources */,
+				3523DE722A6E41BD00A6F722 /* CourseCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +354,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kz.zaki.SwiftbookAppMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +385,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kz.zaki.SwiftbookAppMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
