@@ -9,6 +9,7 @@ import Foundation
 
 struct Course: Decodable {
     let name: String
-    let imageURL: URL
-    let numberOf
+    let imageUrl: URL
+    let numberOfLessons: Int
+    let numberOfTests: Int
 }

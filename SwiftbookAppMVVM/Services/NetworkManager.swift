@@ -34,7 +34,7 @@ class NetworkManager {
                 print("Error serialization json", error)
             }
             
-        } .resume()
+        }.resume()
         
     }
 }

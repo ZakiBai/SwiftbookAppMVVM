@@ -18,6 +18,10 @@
 		3523DE762A6E453B00A6F722 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE752A6E453B00A6F722 /* CourseCell.swift */; };
 		3523DE792A6E483400A6F722 /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE782A6E483400A6F722 /* CourseDetailsViewController.swift */; };
 		3523DE7C2A6E485F00A6F722 /* CourseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE7B2A6E485F00A6F722 /* CourseDetailsViewModel.swift */; };
+		3523DE802A6E4C3300A6F722 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE7F2A6E4C3300A6F722 /* Course.swift */; };
+		3523DE832A6E4C8900A6F722 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE822A6E4C8900A6F722 /* NetworkManager.swift */; };
+		3523DE852A6E4EAE00A6F722 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE842A6E4EAE00A6F722 /* ImageManager.swift */; };
+		3523DE872A6E4F7500A6F722 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523DE862A6E4F7500A6F722 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		3523DE752A6E453B00A6F722 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		3523DE782A6E483400A6F722 /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
 		3523DE7B2A6E485F00A6F722 /* CourseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewModel.swift; sourceTree = "<group>"; };
+		3523DE7F2A6E4C3300A6F722 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		3523DE822A6E4C8900A6F722 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3523DE842A6E4EAE00A6F722 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		3523DE862A6E4F7500A6F722 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +74,13 @@
 		3523DE542A6E403D00A6F722 /* SwiftbookAppMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				3523DE7A2A6E483E00A6F722 /* CourseDetails */,
 				3523DE6B2A6E417C00A6F722 /* CourseList */,
-				3523DE552A6E403D00A6F722 /* AppDelegate.swift */,
-				3523DE572A6E403D00A6F722 /* SceneDelegate.swift */,
+				3523DE7A2A6E483E00A6F722 /* CourseDetails */,
+				3523DE7D2A6E4B2500A6F722 /* App */,
 				3523DE772A6E455300A6F722 /* Storyboard */,
-				3523DE5E2A6E403F00A6F722 /* Assets.xcassets */,
-				3523DE632A6E403F00A6F722 /* Info.plist */,
+				3523DE7E2A6E4BE500A6F722 /* Resources */,
+				3523DE812A6E4C7400A6F722 /* Models */,
+				3523DE882A6E501D00A6F722 /* Services */,
 			);
 			path = SwiftbookAppMVVM;
 			sourceTree = "<group>";
@@ -112,6 +120,42 @@
 				3523DE7B2A6E485F00A6F722 /* CourseDetailsViewModel.swift */,
 			);
 			path = CourseDetails;
+			sourceTree = "<group>";
+		};
+		3523DE7D2A6E4B2500A6F722 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3523DE552A6E403D00A6F722 /* AppDelegate.swift */,
+				3523DE572A6E403D00A6F722 /* SceneDelegate.swift */,
+				3523DE632A6E403F00A6F722 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3523DE7E2A6E4BE500A6F722 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3523DE5E2A6E403F00A6F722 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3523DE812A6E4C7400A6F722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3523DE7F2A6E4C3300A6F722 /* Course.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3523DE882A6E501D00A6F722 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3523DE822A6E4C8900A6F722 /* NetworkManager.swift */,
+				3523DE842A6E4EAE00A6F722 /* ImageManager.swift */,
+				3523DE862A6E4F7500A6F722 /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,13 +229,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3523DE802A6E4C3300A6F722 /* Course.swift in Sources */,
+				3523DE872A6E4F7500A6F722 /* DataManager.swift in Sources */,
 				3523DE6D2A6E419000A6F722 /* CourseListViewModel.swift in Sources */,
+				3523DE832A6E4C8900A6F722 /* NetworkManager.swift in Sources */,
 				3523DE562A6E403D00A6F722 /* AppDelegate.swift in Sources */,
 				3523DE7C2A6E485F00A6F722 /* CourseDetailsViewModel.swift in Sources */,
 				3523DE762A6E453B00A6F722 /* CourseCell.swift in Sources */,
 				3523DE742A6E44BE00A6F722 /* CourseListViewController.swift in Sources */,
 				3523DE792A6E483400A6F722 /* CourseDetailsViewController.swift in Sources */,
 				3523DE582A6E403D00A6F722 /* SceneDelegate.swift in Sources */,
+				3523DE852A6E4EAE00A6F722 /* ImageManager.swift in Sources */,
 				3523DE722A6E41BD00A6F722 /* CourseCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,7 +389,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XZW4VA4NWF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftbookAppMVVM/Info.plist;
+				INFOPLIST_FILE = SwiftbookAppMVVM/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -372,7 +420,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XZW4VA4NWF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftbookAppMVVM/Info.plist;
+				INFOPLIST_FILE = SwiftbookAppMVVM/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
